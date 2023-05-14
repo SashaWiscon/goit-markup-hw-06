@@ -507,7 +507,8 @@ margin-bottom: 12px;
   text-decoration: none;
 }
 .footer-subscribe {
-  margin-left: 90px;
+  margin-left: 145px;
+  
 }
 .footer-subscribe-call {
   display: inline-block;
@@ -814,9 +815,11 @@ color: rgba(117, 117, 117, 0.5);
 .form-agreement-wrapper {
   display: flex;
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 .form-agreement-field {
 display: flex;
+align-items: center;
 }
 /* добавляем пустой  квадрат рядом с чекбоксом */
 .form-agreement-field::before {
