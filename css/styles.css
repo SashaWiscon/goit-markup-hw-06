@@ -720,14 +720,21 @@ border-left: 1px solid #eeeeee ;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-.modal-close-icon {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-icon:hover {
+/* .modal-close-icon {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+/* .modal-close-icon:hover {
   fill: #2196F3;
-}
+} */
+.modal-close-btn:hover,
+ .modal-close-btn:focus {
+  fill: #2196F3;
+} 
+
            /* ВІпадающее окно формы */
 
 .form-title {
@@ -830,6 +837,9 @@ align-items: center;
   margin-right: 10px;
   outline: 1px solid #212121;
 }
+.form-agreement-field::before:focus {
+  outline: 2px solid #ec1212;
+} 
 .form-agreement-input {
   margin-right: 8px;
   fill: #212121;
