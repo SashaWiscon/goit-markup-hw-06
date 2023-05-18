@@ -720,18 +720,13 @@ border-left: 1px solid #eeeeee ;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.modal-close-icon {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-close-icon {
-  fill: #000000;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-/* .modal-close-icon:hover {
-  fill: #2196F3;
-} */
-.modal-close-btn:hover,
- .modal-close-btn:focus {
+
+ .modal-close-btn:focus .modal-close-icon {
   fill: #2196F3;
 } 
 
@@ -837,18 +832,20 @@ align-items: center;
   margin-right: 10px;
   outline: 1px solid #212121;
 }
-.form-agreement-field::before:focus {
-  outline: 2px solid #ec1212;
-} 
 .form-agreement-input {
   margin-right: 8px;
   fill: #212121;
 }
+
+
 /* Сделать интерактивным скрытый снизу чекбокс,чтобы
 кликая на его соседа,на скрытый чек применялся фокус */
 .form-agreement-input:focus + .form-agreement-field::before {
   outline: 1px solid #212121;
 }
+/* .form-agreement-input:focus + .form-agreement-field::before {
+  outline: 5px solid #f723d0;
+} */
 /* изменить у before св-во,если его сосед отмечен(чект) */
 .form-agreement-input:checked + .form-agreement-field::before {
 background-image: url(../images/icon\ check.svg);
